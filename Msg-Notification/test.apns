@@ -1,0 +1,12 @@
+{ "Simulator Target Bundle": "com.soyounglee.Msg-Notification",
+    "aps":{
+        "alert" : {
+            "badge" : 1,
+            "title" : "로컬 알림 메시지",
+            "subtitle" : "준비된 내용이 아주 많아요! 얼른 다시 앱을 열어주세요!!",
+            "body" : "앗! 왜 나갔어요??? 어서 들어오세요!!"
+            }
+    }
+}
+
+
