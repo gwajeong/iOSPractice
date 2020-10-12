@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="scrollViewAutolayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="teU-UA-X23">
+                                <rect key="frame" x="0.0" y="40" width="414" height="926"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iuL-Np-ndn">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="116"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="안녕하세요 🐣 햇병아리 개발자 지망생 이과정입니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2a-oO-sn7">
+                                                <rect key="frame" x="28.5" y="47.5" width="357.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="p2a-oO-sn7" firstAttribute="centerY" secondItem="iuL-Np-ndn" secondAttribute="centerY" id="Y7c-K5-nbv"/>
+                                            <constraint firstItem="p2a-oO-sn7" firstAttribute="centerX" secondItem="iuL-Np-ndn" secondAttribute="centerX" id="mcZ-7R-V0B"/>
+                                        </constraints>
+                                    </view>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1HA-hT-V7z">
+                                        <rect key="frame" x="0.0" y="116" width="414" height="694.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h39-5h-FJ8" userLabel="ContainerView">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="908"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_6738 (27) 2" translatesAutoresizingMaskIntoConstraints="NO" id="m0h-Fo-QUQ">
+                                                        <rect key="frame" x="0.0" y="30" width="414" height="300"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="300" id="LSY-bx-ZUj"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRD-OM-2l4">
+                                                        <rect key="frame" x="50" y="360" width="314" height="548"/>
+                                                        <string key="text">"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="kRD-OM-2l4" secondAttribute="bottom" id="E6k-Z5-x8y"/>
+                                                    <constraint firstAttribute="trailing" secondItem="m0h-Fo-QUQ" secondAttribute="trailing" id="ITk-Qv-xEf"/>
+                                                    <constraint firstItem="kRD-OM-2l4" firstAttribute="top" secondItem="m0h-Fo-QUQ" secondAttribute="bottom" constant="30" id="Xfi-Kj-tj4"/>
+                                                    <constraint firstItem="m0h-Fo-QUQ" firstAttribute="leading" secondItem="h39-5h-FJ8" secondAttribute="leading" id="bGD-vJ-yZR"/>
+                                                    <constraint firstAttribute="trailing" secondItem="kRD-OM-2l4" secondAttribute="trailing" constant="50" id="bZ4-y4-YCa"/>
+                                                    <constraint firstItem="m0h-Fo-QUQ" firstAttribute="top" secondItem="h39-5h-FJ8" secondAttribute="top" constant="30" id="c9L-tJ-ONs"/>
+                                                    <constraint firstItem="kRD-OM-2l4" firstAttribute="top" secondItem="m0h-Fo-QUQ" secondAttribute="bottom" constant="30" id="ftE-ZP-HCn"/>
+                                                    <constraint firstItem="kRD-OM-2l4" firstAttribute="leading" secondItem="h39-5h-FJ8" secondAttribute="leading" constant="50" id="s9G-dL-m65"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="h39-5h-FJ8" firstAttribute="bottom" secondItem="uzJ-Rj-7wf" secondAttribute="bottom" id="LJ5-cS-dBo"/>
+                                            <constraint firstItem="h39-5h-FJ8" firstAttribute="trailing" secondItem="uzJ-Rj-7wf" secondAttribute="trailing" id="Ogt-o1-xug"/>
+                                            <constraint firstItem="h39-5h-FJ8" firstAttribute="top" secondItem="uzJ-Rj-7wf" secondAttribute="top" id="XVS-Mk-77H"/>
+                                            <constraint firstItem="h39-5h-FJ8" firstAttribute="width" secondItem="7IT-4p-kxg" secondAttribute="width" id="lK7-K7-C3y"/>
+                                            <constraint firstItem="h39-5h-FJ8" firstAttribute="leading" secondItem="uzJ-Rj-7wf" secondAttribute="leading" id="rqq-vk-HqB"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="uzJ-Rj-7wf"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="7IT-4p-kxg"/>
+                                    </scrollView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oX1-oj-VYl">
+                                        <rect key="frame" x="0.0" y="810.5" width="414" height="115.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIR-qn-1dm">
+                                                <rect key="frame" x="40" y="42.5" width="95" height="30"/>
+                                                <color key="backgroundColor" red="0.078431372550000003" green="0.078431372550000003" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="블로그 보러가기">
+                                                    <color key="titleColor" red="0.99935239549999999" green="0.8198001385" blue="0.1524600089" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="goToBlogClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9im-An-RfP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxj-gD-Kv5">
+                                                <rect key="frame" x="278" y="42.5" width="96" height="30"/>
+                                                <color key="backgroundColor" red="0.078431372550000003" green="0.078431372550000003" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="github구경가기">
+                                                    <color key="titleColor" red="0.99935239549999999" green="0.8198001385" blue="0.1524600089" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="goToGithubClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ce-AQ-Ln6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="uxj-gD-Kv5" secondAttribute="trailing" constant="40" id="1Al-HW-MwS"/>
+                                            <constraint firstItem="vIR-qn-1dm" firstAttribute="leading" secondItem="oX1-oj-VYl" secondAttribute="leading" constant="40" id="fnV-oP-sl1"/>
+                                            <constraint firstItem="vIR-qn-1dm" firstAttribute="centerY" secondItem="oX1-oj-VYl" secondAttribute="centerY" id="gib-Ar-GuE"/>
+                                            <constraint firstItem="uxj-gD-Kv5" firstAttribute="centerY" secondItem="oX1-oj-VYl" secondAttribute="centerY" id="mJY-df-S7l"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="iuL-Np-ndn" secondAttribute="trailing" id="1N3-OD-WSy"/>
+                                    <constraint firstItem="iuL-Np-ndn" firstAttribute="leading" secondItem="teU-UA-X23" secondAttribute="leading" id="24f-Zy-w9i"/>
+                                    <constraint firstAttribute="bottom" secondItem="oX1-oj-VYl" secondAttribute="bottom" id="Ca9-W4-4Q9"/>
+                                    <constraint firstItem="oX1-oj-VYl" firstAttribute="leading" secondItem="teU-UA-X23" secondAttribute="leading" id="DsH-NT-tIe"/>
+                                    <constraint firstItem="oX1-oj-VYl" firstAttribute="top" secondItem="1HA-hT-V7z" secondAttribute="bottom" id="JR0-Ps-7e3"/>
+                                    <constraint firstItem="1HA-hT-V7z" firstAttribute="height" secondItem="iuL-Np-ndn" secondAttribute="height" multiplier="6" id="TmI-0S-oe1"/>
+                                    <constraint firstItem="iuL-Np-ndn" firstAttribute="top" secondItem="teU-UA-X23" secondAttribute="top" id="eGp-sF-5uv"/>
+                                    <constraint firstItem="1HA-hT-V7z" firstAttribute="top" secondItem="iuL-Np-ndn" secondAttribute="bottom" id="iXL-JL-pfE"/>
+                                    <constraint firstAttribute="trailing" secondItem="oX1-oj-VYl" secondAttribute="trailing" id="kqh-dj-fjv"/>
+                                    <constraint firstItem="oX1-oj-VYl" firstAttribute="height" secondItem="iuL-Np-ndn" secondAttribute="height" id="zBo-ZQ-WH0"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="teU-UA-X23" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="40" id="MXB-Ks-9Dm"/>
+                            <constraint firstItem="teU-UA-X23" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sdg-Os-TA4"/>
+                            <constraint firstAttribute="trailing" secondItem="teU-UA-X23" secondAttribute="trailing" id="zOm-TS-w9e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="teU-UA-X23" secondAttribute="bottom" id="zi4-mM-XQ8"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <size key="freeformSize" width="414" height="1000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89.855072463768124" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_6738 (27) 2" width="1364" height="2212"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
