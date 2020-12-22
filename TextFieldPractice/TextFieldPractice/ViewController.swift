@@ -27,9 +27,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         guard let text = textField.text else {return false}
-    
-       
-        
         
         // 중간에 추가되는 텍스트 막기
         if text.count >= maxLength && range.length == 0 && range.location < maxLength {
@@ -42,17 +39,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @objc private func textDidChange(_ notification: Notification) {
         if let textField = notification.object as? UITextField {
             if let text = textField.text {
+                
+                if text.count > maxLength {
+                    // 8글자 넘어가면 자동으로 키보드 내려감
+                    textField.resignFirstResponder()
+                }
+                
                 // 초과되는 텍스트 제거
                 if text.count >= maxLength {
                     let index = text.index(text.startIndex, offsetBy: maxLength)
                     let newString = text[text.startIndex..<index]
                     textField.text = String(newString)
-                    
-                    // 8글자 넘어가면 자동으로 키보드 내려감
-                    textField.resignFirstResponder()
                 }
-
-                if text.count < 2 || text.count > 8 {
+                
+                else if text.count < 2 {
                     warningLabel.text = "2글자 이상 8글자 이하로 입력해주세요"
                     warningLabel.textColor = .red
                     
